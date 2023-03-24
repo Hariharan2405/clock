@@ -1,0 +1,26 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Clock</title>
+	
+	
+	</head>
+	
+	<body>
+	
+		<p>Current local time = <span id="clock"></span></p>
+	
+		<script>
+				function clock(){
+					var clock=new Date();
+					document.getElementById("clock").innerHTML=clock.toLocaleTimeString();
+				}
+				setInterval(clock,1000)
+			
+		</script>
+	</body>
+</html>
